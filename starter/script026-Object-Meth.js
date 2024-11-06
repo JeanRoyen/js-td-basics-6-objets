@@ -3,7 +3,9 @@
  */
 
 /* Une MÉTHODE est une fonction associée à un objet */
-
+/*
+ */
+/*
 const aurora = {
     nom: "Aurora",
     sante: 150,
@@ -31,6 +33,7 @@ const aurora = {
 EXERCICE 1 : Ajoute une méthode calcAge à john qui calcule son âge
 (en soustrayant sa date de naissance de 2019), le retourne et le stocke dans une propriété age.
 */
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -44,13 +47,22 @@ var john = {
 };
 console.log(john);
 console.log(john.calcAge());
-
+*/
 /*
 EXERCICE 2 :
 - Crée un objet rectangle qui possède 2 propriétés : longueur (5) et largeur (3)
 - Ajoute une méthode à cet objet qui lui permet de calculer sa propre surface
 - Utilise cette méthode pour afficher sa surface dans la console
 */
+
+const rect = {
+    longueur: 5,
+    largeur: 3,
+    calcSurface() {
+        return this.longueur*this.largeur
+    }
+}
+console.log(rect.calcSurface())
 
 /* **********************************
 * Les objets prédéfinis de JavaScript
